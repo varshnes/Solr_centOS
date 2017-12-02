@@ -79,7 +79,6 @@ EXPOSE 8983
 WORKDIR /opt/solr/docker-solr/scripts
 USER $SOLR_USER
 RUN chmod -R 755 /opt/solr/docker-solr
-RUN chmod +x /opt/solr/docker-solr/scripts/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["solr-foreground"]
